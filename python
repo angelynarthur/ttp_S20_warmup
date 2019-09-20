@@ -5,8 +5,18 @@
 still_words = ['1','22','333','4444','55555']
 
 
+[len(i) for i in still_words]
+
 # 2 - get the numeric values of the list items (eg. the value of '22' is 22), and print the sum.
+
+
+still_words = [int(i) for i in still_words]
+print(still_words)
+sum(still_words)
 
 
 # 3 - How do you fix the typo in this list, without rewriting the whole list?
 words = ['one','two','three','for','five']
+
+words = [word.replace ('for','four') for word in words]
+words
